@@ -1,0 +1,71 @@
+{
+  "name": "electron-react-typescript-app",
+  "version": "0.1.0",
+  "private": true,
+  "homepage": "./",
+  "main": "src/start.js",
+  "build": {
+    "appId": "some.id.ofyours",
+    "directories": {
+      "buildResources": "assets"
+    },
+    "win": {
+      "category": "your.app.category.type",
+      "iconUrl": "path-to-icon.png"
+    },
+    "mac": {
+      "category": "your.app.category.type",
+      "iconUrl": "path-to-icon.png"
+    }
+  },
+  "dependencies": {
+    "@testing-library/jest-dom": "^4.2.4",
+    "@testing-library/react": "^9.3.2",
+    "@testing-library/user-event": "^7.1.2",
+    "electron": "^9.2.0",
+    "electron-is-dev": "^1.2.0",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-scripts": "3.4.3"
+  },
+  "scripts": {
+    "electron": "cross-env NODE_ENV=dev nodemon --exec \"\"electron .\"\"",
+    "electron-build": "electron-builder",
+    "start": "cross-env BROWSER=none npm run react-start",
+    "react-start": "react-scripts start",
+    "build": "react-scripts build",
+    "react-test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^3.9.0",
+    "@typescript-eslint/parser": "^3.9.0",
+    "cross-env": "^7.0.2",
+    "electron-builder": "^22.8.0",
+    "electron-reload": "^1.5.0",
+    "eslint-config-airbnb": "^18.2.0",
+    "eslint-config-prettier": "^6.11.0",
+    "eslint-plugin-import": "^2.22.0",
+    "eslint-plugin-jsx-a11y": "^6.3.1",
+    "eslint-plugin-prettier": "^3.1.4",
+    "eslint-plugin-react": "^7.20.6",
+    "eslint-plugin-react-hooks": "^4.0.8",
+    "nodemon": "^2.0.4",
+    "typescript": "^3.9.7"
+  }
+}
