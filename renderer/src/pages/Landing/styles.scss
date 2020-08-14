@@ -1,0 +1,45 @@
+#page-landing {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: #282828;
+  color: #fff;
+  justify-content: center;
+
+  h1 {
+    text-align: center;
+    padding-bottom: 4em;
+  }
+
+  .content-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    margin-bottom: 2em;
+    p {
+      text-align: end;
+      padding: 0.6em;
+      margin-right: 0.6em;
+    }
+  }
+
+  div.button-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  .primary-button {
+    padding: 1em;
+    border: 0.2em;
+    border-radius: 0.4em;
+    width: 90%;
+    max-width: 12em;
+    background-color: #fff;
+    color: #282828;
+  }
+  .primary-button:hover {
+    cursor: pointer;
+  }
+}
