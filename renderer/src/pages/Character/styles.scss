@@ -1,3 +1,11 @@
 h1 {
   color: white;
 }
+.items-wrapper{
+  display: flex;
+  margin-top: 2em;
+  flex-wrap: wrap;
+}
+.each-item-wrapper {
+  padding: 1em;
+}

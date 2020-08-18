@@ -32,21 +32,7 @@
   opacity: 0.1;
 }
 
-#page-landing-main-wrapper .landing-button-wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  background-color: #fff;
-  padding: 1em;
-  border-radius: 0.6em;
-  max-width: 112px;
-}
-
-#page-landing-main-wrapper .landing-button-wrapper a {
-  text-decoration: none;
-  color: #201d1d;
+#page-landing-main-wrapper .right-landing-page-wrapper {
+  margin-top: 3em;
 }
 /*# sourceMappingURL=styles.css.map */

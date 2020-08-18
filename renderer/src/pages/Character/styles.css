@@ -1,4 +1,17 @@
 h1 {
   color: white;
 }
+
+.items-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 2em;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.each-item-wrapper {
+  padding: 1em;
+}
 /*# sourceMappingURL=styles.css.map */

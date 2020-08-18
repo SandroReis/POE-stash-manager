@@ -2,6 +2,7 @@ import React from 'react'
 import './styles.css'
 import { Link } from 'react-router-dom'
 import Logo from '../../assets/imagens/Path_of_Exile_Logo.png'
+import PrimaryButton from '../../components/PrimaryButton'
 
 export default function Landing () {
   return (
@@ -16,11 +17,7 @@ export default function Landing () {
         <div className="content-wrapper">
           <p hidden>tell me your price ...</p>
         </div>
-        <div className="landing-button-wrapper">
-          <Link to="/character" className="primary-button">
-            <a className="primary-landing-button">Get start!</a>
-          </Link>
-        </div>
+        <PrimaryButton link="character" text="Get Started"/>
       </div>
     </div>
   )

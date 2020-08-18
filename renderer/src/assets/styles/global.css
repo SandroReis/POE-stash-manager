@@ -25,6 +25,9 @@ button,
 textarea {
   font: 500 1.6rem Poppins;
 }
+a {
+  text-decoration: none;
+}
 
 .container {
   width: 90vw;
