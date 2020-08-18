@@ -9,9 +9,6 @@ h1 {
   margin-top: 2em;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-}
-
-.each-item-wrapper {
-  padding: 1em;
+  max-width: 600px;
 }
 /*# sourceMappingURL=styles.css.map */

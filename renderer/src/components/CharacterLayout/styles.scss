@@ -1,12 +1,53 @@
-.primary-button-wrapper {
-  display: flex;
-  justify-content: center;
-  background-color: #fff;
+.grid-container {
+  border: 0.01em solid #FFF;
   padding: 1em;
-  border-radius: 0.6em;
-  max-width: 140px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  gap: 1px 1px;
+  grid-template-areas: 'LEFT-HAND LEFT-HAND . HELMET HELMET HELMET . RIGHT-HAND RIGHT-HAND' 'LEFT-HAND LEFT-HAND . HELMET HELMET HELMET . RIGHT-HAND RIGHT-HAND' 'LEFT-HAND LEFT-HAND . ARMOR ARMOR ARMOR NECKLACE RIGHT-HAND RIGHT-HAND' 'LEFT-HAND LEFT-HAND LEFT-RING ARMOR ARMOR ARMOR RIGHT-RING RIGHT-HAND RIGHT-HAND' '. GLOVES GLOVES ARMOR ARMOR ARMOR BOOTS BOOTS .' '. GLOVES GLOVES BELT BELT BELT BOOTS BOOTS .' '. . FLASKS FLASKS FLASKS FLASKS FLASKS . .' '. . FLASKS FLASKS FLASKS FLASKS FLASKS . .';
+}
 
-  a {
-    color: #201d1d;
-  }
+.FLASKS {
+  grid-area: FLASKS;
+}
+
+.BELT {
+  grid-area: BELT;
+}
+
+.GLOVES {
+  grid-area: GLOVES;
+}
+
+.BOOTS {
+  grid-area: BOOTS;
+}
+
+.LEFT-RING {
+  grid-area: LEFT-RING;
+}
+
+.RIGHT-RING {
+  grid-area: RIGHT-RING;
+}
+
+.NECKLACE {
+  grid-area: NECKLACE;
+}
+
+.ARMOR {
+  grid-area: ARMOR;
+}
+
+.LEFT-HAND {
+  grid-area: LEFT-HAND;
+}
+
+.RIGHT-HAND {
+  grid-area: RIGHT-HAND;
+}
+
+.HELMET {
+  grid-area: HELMET;
 }

@@ -5,7 +5,5 @@ h1 {
   display: flex;
   margin-top: 2em;
   flex-wrap: wrap;
-}
-.each-item-wrapper {
-  padding: 1em;
+  max-width: 600px;
 }

@@ -6,7 +6,7 @@ import CharacterLayout from '../../components/CharacterLayout'
 export default function Character () {
   return (
     <div id="page-character">
-      <div>
+      <div className="items-wrapper">
         <CharacterLayout />
       </div>
       <div>
