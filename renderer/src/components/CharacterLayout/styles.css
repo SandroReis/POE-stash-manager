@@ -1,0 +1,94 @@
+.grid-container {
+  border: 0.01em solid #FFF;
+  padding: 1em;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  -ms-grid-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  gap: 1px 1px;
+      grid-template-areas: 'LEFT-HAND LEFT-HAND . HELMET HELMET HELMET . RIGHT-HAND RIGHT-HAND' 'LEFT-HAND LEFT-HAND . HELMET HELMET HELMET . RIGHT-HAND RIGHT-HAND' 'LEFT-HAND LEFT-HAND . ARMOR ARMOR ARMOR NECKLACE RIGHT-HAND RIGHT-HAND' 'LEFT-HAND LEFT-HAND LEFT-RING ARMOR ARMOR ARMOR RIGHT-RING RIGHT-HAND RIGHT-HAND' '. GLOVES GLOVES ARMOR ARMOR ARMOR BOOTS BOOTS .' '. GLOVES GLOVES BELT BELT BELT BOOTS BOOTS .' '. . FLASKS FLASKS FLASKS FLASKS FLASKS . .' '. . FLASKS FLASKS FLASKS FLASKS FLASKS . .';
+}
+
+.FLASKS {
+  -ms-grid-row: 7;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 5;
+  grid-area: FLASKS;
+}
+
+.BELT {
+  -ms-grid-row: 6;
+  -ms-grid-column: 4;
+  -ms-grid-column-span: 3;
+  grid-area: BELT;
+}
+
+.GLOVES {
+  -ms-grid-row: 5;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 2;
+  grid-area: GLOVES;
+}
+
+.BOOTS {
+  -ms-grid-row: 5;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 7;
+  -ms-grid-column-span: 2;
+  grid-area: BOOTS;
+}
+
+.LEFT-RING {
+  -ms-grid-row: 4;
+  -ms-grid-column: 3;
+  grid-area: LEFT-RING;
+}
+
+.RIGHT-RING {
+  -ms-grid-row: 4;
+  -ms-grid-column: 7;
+  grid-area: RIGHT-RING;
+}
+
+.NECKLACE {
+  -ms-grid-row: 3;
+  -ms-grid-column: 7;
+  grid-area: NECKLACE;
+}
+
+.ARMOR {
+  -ms-grid-row: 3;
+  -ms-grid-row-span: 3;
+  -ms-grid-column: 4;
+  -ms-grid-column-span: 3;
+  grid-area: ARMOR;
+}
+
+.LEFT-HAND {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 4;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: LEFT-HAND;
+}
+
+.RIGHT-HAND {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 4;
+  -ms-grid-column: 8;
+  -ms-grid-column-span: 2;
+  grid-area: RIGHT-HAND;
+}
+
+.HELMET {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 4;
+  -ms-grid-column-span: 3;
+  grid-area: HELMET;
+}
+/*# sourceMappingURL=styles.css.map */

@@ -9,7 +9,9 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "electron": "^6.0.12"
+    "@types/react-router-dom": "^5.1.5",
+    "electron": "^6.0.12",
+    "react-router-dom": "^5.2.0"
   },
   "devDependencies": {
     "@types/electron": "^1.6.10",

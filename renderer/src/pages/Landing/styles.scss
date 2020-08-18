@@ -1,0 +1,25 @@
+#page-landing-main-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  h1 {
+    margin-top: 1em;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 1em;
+  }
+
+  div.logo-landing-wrapper {
+    display: flex;
+    justify-content: center;
+    padding: 1em;
+    opacity: 0.1;
+  }
+  .right-landing-page-wrapper {
+    margin-top: 3em;
+  }
+
+}
+
