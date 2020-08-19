@@ -1,0 +1,21 @@
+.primary-input-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-bottom: 1em;
+  max-width: 200px;
+}
+
+.primary-input-wrapper input {
+  height: 2em;
+  border-radius: .4em;
+}
+
+.primary-input-wrapper span {
+  margin: 0.4em 0;
+}
+/*# sourceMappingURL=styles.css.map */

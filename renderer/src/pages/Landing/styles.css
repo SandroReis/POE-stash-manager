@@ -14,7 +14,21 @@
           align-items: center;
 }
 
+#page-landing-main-wrapper .form-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 #page-landing-main-wrapper h1 {
+  font-size: 1.8em;
   margin-top: 1em;
   text-align: center;
   text-transform: uppercase;
@@ -34,5 +48,70 @@
 
 #page-landing-main-wrapper .right-landing-page-wrapper {
   margin-top: 3em;
+}
+
+@media (min-height: 700px) {
+  div.logo-landing-wrapper img {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+@media (min-width: 700px) {
+  #page-landing-main-wrapper {
+    display: -ms-grid;
+    display: grid;
+    height: 100vh;
+    -ms-grid-columns: 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    -ms-grid-rows: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+    gap: 1px 1px;
+        grid-template-areas: 'left-area left-area right-area right-area' 'left-area left-area right-area right-area' 'left-area left-area right-area right-area';
+  }
+  div.logo-landing-wrapper img {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .left-landing-page-wrapper {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 3;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-area: left-area;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    position: relative;
+    margin-top: 150px;
+  }
+  .left-landing-page-wrapper h1 {
+    margin-bottom: -200px;
+  }
+  .left-landing-page-wrapper .logo-landing-wrapper img {
+    margin-top: -250px;
+  }
+  .right-landing-page-wrapper {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 3;
+    -ms-grid-column: 3;
+    -ms-grid-column-span: 2;
+    grid-area: right-area;
+  }
+  .form-content:last-child {
+    margin-top: 2em;
+  }
 }
 /*# sourceMappingURL=styles.css.map */
