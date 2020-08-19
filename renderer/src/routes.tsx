@@ -6,7 +6,7 @@ import Character from './pages/Character'
 function Routes () {
   return <BrowserRouter >
     <Route path="/" exact component={Landing} />
-    <Route path="/character" component={Character} />
+    <Route path="/character/:accountName/:characterName" component={Character} />
   </BrowserRouter>
 }
 

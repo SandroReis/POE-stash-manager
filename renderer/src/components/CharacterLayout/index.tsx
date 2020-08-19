@@ -5,7 +5,7 @@ import './styles.css'
 import CharacterItem from '../CharacterItem'
 // import * as HandleItems from './handleItems.jsx'
 
-export default function CharacterLayout () {
+export default function CharacterLayout ({characterName, accountName}) {
   function selectBelt (itemsArray) {
     const belt = itemsArray.find((item) => item.inventoryId === 'Belt')
     const item = <CharacterItem icon={belt.icon} />
@@ -97,8 +97,6 @@ export default function CharacterLayout () {
     const item = <CharacterItem icon={BodyArmour.icon} />
     return item || null
   }
-  const accountName = 'plopts'
-  const characterName = 'gODDWarrior'
   const url = `https://cors-anywhere.herokuapp.com/https://www.pathofexile.com/character-window/get-items?accountName=${accountName}&character=${characterName}`
 
   const characterInfo = useAxiosGet(url)
