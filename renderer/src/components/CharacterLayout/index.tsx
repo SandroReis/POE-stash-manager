@@ -94,7 +94,7 @@ export default function CharacterLayout ({characterName, accountName}) {
     const BodyArmour = itemsArray.find(
       (item) => item.inventoryId === 'BodyArmour'
     )
-    const item = <CharacterItem icon={BodyArmour.icon} />
+    const item = <CharacterItem icon={BodyArmour?.icon} />
     return item || null
   }
   const url = `https://cors-anywhere.herokuapp.com/https://www.pathofexile.com/character-window/get-items?accountName=${accountName}&character=${characterName}`
