@@ -21,26 +21,66 @@ export default function CharacterLayout ({ characterName, accountName }) {
 
   if (characterInfo.data) {
     const { character, items } = characterInfo.data
+    console.log('characterInfo.data', characterInfo.data)
     content = (
       <div className='layout-wrapper'>
-        <div className='content-wrapper'>
-          <h2>Character Name: {character.name}</h2>
-          <p>League: {character.league}</p>
-          <p>Class: {character.class}</p>
-          <p>Level: {character.level}</p>
+        <div className='img-items-layout'>
+          <div className='content-wrapper'>
+            <h2>Character Name: {character.name}</h2>
+            <p>League: {character.league}</p>
+            <p>Class: {character.class}</p>
+            <p>Level: {character.level}</p>
+          </div>
+          <div className='grid-container'>
+            <CharacterItem items={items} itemName='Flask' gridClass='FLASKS' />
+            <CharacterItem items={items} itemName='Belt' gridClass='BELT' />
+            <CharacterItem items={items} itemName='Gloves' gridClass='GLOVES' />
+            <CharacterItem items={items} itemName='Boots' gridClass='BOOTS' />
+            <CharacterItem
+              items={items}
+              itemName='Ring'
+              gridClass='LEFT-RING'
+            />
+            <CharacterItem
+              items={items}
+              itemName='Ring2'
+              gridClass='RIGHT-RING'
+            />
+            <CharacterItem
+              items={items}
+              itemName='Amulet'
+              gridClass='NECKLACE'
+            />
+            <CharacterItem
+              items={items}
+              itemName='BodyArmour'
+              gridClass='ARMOR'
+            />
+            <CharacterItem
+              items={items}
+              itemName='Offhand'
+              gridClass='LEFT-HAND'
+            />
+            <CharacterItem
+              items={items}
+              itemName='Weapon'
+              gridClass='RIGHT-HAND'
+            />
+            <CharacterItem items={items} itemName='Helm' gridClass='HELMET' />
+          </div>
         </div>
-        <div className='grid-container'>
-          <CharacterItem items={items} itemName='Flask' gridClass='FLASKS' />
-          <CharacterItem items={items} itemName='Belt' gridClass='BELT' />
-          <CharacterItem items={items} itemName='Gloves' gridClass='GLOVES' />
-          <CharacterItem items={items} itemName='Boots' gridClass='BOOTS' />
-          <CharacterItem items={items} itemName='Ring' gridClass='LEFT-RING' />
-          <CharacterItem items={items} itemName='Ring2' gridClass='RIGHT-RING'/>
-          <CharacterItem items={items} itemName='Amulet' gridClass='NECKLACE' />
-          <CharacterItem items={items} itemName='BodyArmour' gridClass='ARMOR'/>
-          <CharacterItem items={items} itemName='Offhand' gridClass='LEFT-HAND'/>
-          <CharacterItem items={items} itemName='Weapon' gridClass='RIGHT-HAND'/>
-          <CharacterItem items={items} itemName='Helm' gridClass='HELMET' />
+        <div className='item-details-wrapper items-details-layout'>
+          {items.map(item => {
+            return (
+              <div className='item-attributes '>
+                <h3>{item?.name}</h3>
+                <p>
+                  {item?.explicitMods?.map(explicitMod => <p>{explicitMod}</p>)}
+                  <br />
+                </p>
+              </div>
+            )
+          })}
         </div>
       </div>
     )

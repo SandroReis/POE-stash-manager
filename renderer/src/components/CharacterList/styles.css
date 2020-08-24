@@ -1,6 +1,6 @@
 .grid-container {
   height: 80%;
-  border: 0.01em solid #fff;
+  border: 0.01em solid #FFF;
   padding: 1em;
   display: -ms-grid;
   display: grid;
@@ -9,7 +9,7 @@
   -ms-grid-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
       grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
   gap: 1px 1px;
-      grid-template-areas: 'LEFT-HAND LEFT-HAND . HELMET HELMET HELMET . RIGHT-HAND RIGHT-HAND' 'LEFT-HAND LEFT-HAND . HELMET HELMET HELMET . RIGHT-HAND RIGHT-HAND' 'LEFT-HAND LEFT-HAND . ARMOR ARMOR ARMOR NECKLACE RIGHT-HAND RIGHT-HAND' 'LEFT-HAND LEFT-HAND LEFT-RING ARMOR ARMOR ARMOR RIGHT-RING RIGHT-HAND RIGHT-HAND' '. GLOVES GLOVES ARMOR ARMOR ARMOR BOOTS BOOTS .' '. GLOVES GLOVES BELT BELT BELT BOOTS BOOTS .' '. . FLASKS FLASKS FLASKS FLASKS FLASKS . .' '. . FLASKS FLASKS FLASKS FLASKS FLASKS . .';
+      grid-template-areas: 'LEFT-HAND LEFT-HAND . HELMET HELMET HELMET . RIGHT-HAND RIGHT-HAND' 'LEFT-HAND LEFT-HAND . HELMET HELMET HELMET . RIGHT-HAND RIGHT-HAND'  'LEFT-HAND LEFT-HAND . ARMOR ARMOR ARMOR NECKLACE RIGHT-HAND RIGHT-HAND'  'LEFT-HAND LEFT-HAND LEFT-RING ARMOR ARMOR ARMOR RIGHT-RING RIGHT-HAND RIGHT-HAND'  '. GLOVES GLOVES ARMOR ARMOR ARMOR BOOTS BOOTS .'  '. GLOVES GLOVES BELT BELT BELT BOOTS BOOTS .'  '. . FLASKS FLASKS FLASKS FLASKS FLASKS . .'  '. . FLASKS FLASKS FLASKS FLASKS FLASKS . .';
 }
 
 .content-wrapper {
@@ -27,35 +27,11 @@
 }
 
 .layout-wrapper {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 1fr 1fr 1fr 1fr;
-      grid-template-columns: 1fr 1fr 1fr 1fr;
-  -ms-grid-rows: 1fr 1fr 1fr;
-      grid-template-rows: 1fr 1fr 1fr;
-  gap: 1px 1px;
-      grid-template-areas: 'img-items-layout img-items-layout items-details-layout items-details-layout' 'img-items-layout img-items-layout items-details-layout items-details-layout' 'img-items-layout img-items-layout items-details-layout items-details-layout';
+  max-width: 100%;
+  height: 100%;
 }
 
-.img-items-layout {
-  -ms-grid-row: 1;
-  -ms-grid-row-span: 3;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 2;
-  grid-area: img-items-layout;
-}
-
-.items-details-layout {
-  -ms-grid-row: 1;
-  -ms-grid-row-span: 3;
-  -ms-grid-column: 3;
-  -ms-grid-column-span: 2;
-  grid-area: items-details-layout;
-}
-
-.img-items-layout {
-  width: 500px;
-  max-height: 600px;
+#page-character {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -69,12 +45,6 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-}
-
-.item-attributes {
-  width: 100%;
-  margin: 2px;
-  border: 1px solid white;
 }
 
 .back-button-wrapper {
