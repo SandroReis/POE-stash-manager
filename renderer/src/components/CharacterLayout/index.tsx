@@ -5,7 +5,7 @@ import './styles.css'
 import CharacterItem from '../CharacterItem'
 
 export default function CharacterLayout ({ characterName, accountName }) {
-  const url = `https://cors-anywhere.herokuapp.com/https://www.pathofexile.com/character-window/get-items?accountName=${accountName}&character=${characterName}`
+  const url = `https://www.pathofexile.com/character-window/get-items?accountName=${accountName}&character=${characterName}`
 
   const characterInfo = useAxiosGet(url)
 
